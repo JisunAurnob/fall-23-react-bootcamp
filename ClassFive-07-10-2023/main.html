@@ -73,7 +73,7 @@
 						<option value="yellow">Yellow</option>
 					</select> -->
 
-					<div id="color_div" class="my-4" style="width: 100px; height: 100px; background-color: white;"></div>
+					<div id="color_div" onmouseover="changeColor()" class="my-4" style="width: 100px; height: 100px; background-color: white;"></div>
 
 				</div>
 			</div>
@@ -103,6 +103,34 @@
 			// document.getElementById('color_div').innerHTML = '<span class="text-danger">Some text here</span>';
 		}
 
+
+
+
+    let i = 0;
+
+    function changeColor(){
+      let color = ['blue', 'pink', 'green', 'orange'];
+
+      document.getElementById('color_div').style.backgroundColor = color[i];
+// console.log(color.length);
+      if((color.length-1)==i){
+        i = 0;
+      }
+      else{
+        i++;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
         function validate(input_field){
             var name = input_field.value;
 
@@ -120,6 +148,37 @@
 
             console.log(name);
         }
+
+
+
+
+
+
+
+
+        // let a = 10;
+
+        // a += 5;
+
+        // a %= 3;
+
+        // a = a % 3;
+
+        // var x = ++a;
+
+        
+
+        // console.log('x = '+x);
+        // console.log('a = '+a);
+
+
+
+
+
+
+
+
+
 
 
 	</script>
